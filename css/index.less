@@ -1,0 +1,988 @@
+@media screen and (min-width: 720px) {
+    html {
+        font-size: 100px !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    // min-width: 320px;
+    max-width: 720px;
+    width: 7.2rem;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+    line-height: 1.15;
+}
+
+// 头部
+.header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .header-download {
+        height: 1rem;
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .header-search {
+        height: .84rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        background-color: #F2F2F2 !important;
+
+
+        .search-logo {
+            margin: 0 .2rem;
+
+            img {
+                width: .48rem;
+            }
+        }
+
+        .search-content {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #B2B2B2;
+            font-size: .3rem;
+            border: 1px solid #e5e5e5;
+            border-radius: .04rem;
+
+            i {
+                width: .6rem;
+                height: .6rem;
+                background: url(../images/search-icon.png) no-repeat center;
+                background-size: .4rem .4rem;
+            }
+        }
+
+        .search-login {
+            display: flex;
+            margin: 0 .2rem;
+
+            i {
+                width: .6rem;
+                height: .6rem;
+                background: url(../images/search-login.png) no-repeat center;
+                background-size: .4rem .4rem;
+            }
+        }
+
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 1.84rem;
+        left: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        height: .57rem;
+        width: 100%;
+        background-color: #F2F2F2 !important;
+
+        .header-nav-item {
+            padding: 0 .25rem;
+
+            span {
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                font-size: .26rem;
+                line-height: .55rem;
+                text-align: center;
+                border-bottom: 2px solid rgb(237, 91, 0, 0);
+                border-color: rgb(242, 242, 242);
+            }
+
+            .selected {
+                color: #ED5B7D;
+                border-color: #ED5B00;
+            }
+        }
+
+        .nav-display {
+            width: .68rem;
+            height: .55rem;
+            line-height: .55rem;
+            text-align: center;
+
+            .nav-icon {
+                display: inline-block;
+                width: .4rem;
+                height: .4rem;
+                vertical-align: middle;
+                background: url(../images/nav-icon.png) no-repeat;
+                background-size: .4rem .4rem;
+            }
+        }
+    }
+}
+
+// 轮播图
+.swiper-container {
+    margin-top: 2.41rem;
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+// 局部导航
+.local-nav-container {
+    .local-nav-floor {
+        .local-nav-item {
+            float: left;
+            width: 20%;
+
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+// 分割线
+.division-gray16-line {
+    clear: left;
+    height: .16rem;
+    background-color: #F5F5F5
+}
+
+.division-gray4-line {
+    height: .04rem;
+    background-color: #F5F5F5;
+}
+
+.division-gray2-line {
+    height: .02rem;
+    background-color: #CECECE;
+}
+
+.division-white6-line {
+    height: .0666rem;
+
+}
+
+.division-white4-line {
+    height: .04rem;
+}
+
+// 小米推荐
+.recommend-container {
+    display: flex;
+
+    .recommend-item {
+        flex: 1;
+        height: 5.08rem;
+
+        &:first-child {
+            margin-right: .04rem;
+        }
+
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                flex: 1;
+
+                &:nth-child(1) {
+                    margin-bottom: .04rem;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        a {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// 小米探索
+.explore-container {
+    a {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 每日精选
+.selection-container {
+    .selection-head {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .selection-list {
+        display: flex;
+        padding: 0 .12rem;
+
+        a {
+            flex: 1;
+            width: 50%;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                margin-right: .14rem
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: .2rem .27rem;
+                text-align: center;
+
+                .name {
+                    font-size: .28rem;
+                    color: #212121;
+                }
+
+                .brief {
+                    margin: .06rem 0 0;
+                    font-size: .22rem;
+                    color: #CECECE;
+                }
+
+                .price {
+                    position: relative;
+                    display: inline-block;
+                    height: .42rem;
+                    line-height: .42rem;
+                    padding-left: .18rem;
+                    color: #EA625B;
+                    font-size: .28rem;
+                    overflow: hidden;
+
+                    span {
+                        display: inline-block;
+                        font-size: .2rem;
+                        margin-left: .04rem;
+                    }
+
+                    .old-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: .22rem;
+                        color: #ADADAD;
+                        text-decoration: line-through;
+                        padding-left: 15px;
+                        margin-left: 0;
+
+                        &::before {
+                            content: '￥';
+                            position: absolute;
+                            top: .02rem;
+                            left: 0;
+                            font-size: .18rem;
+                        }
+                    }
+
+                    &::before {
+                        content: '￥';
+                        position: absolute;
+                        top: .02rem;
+                        left: 0;
+                        font-size: .2rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .buybtn {
+                    width: 2rem;
+                    background-color: #EA625B;
+                    text-align: center;
+                    color: #fff;
+                    font-size: .24rem;
+                    margin: 0 auto;
+                    padding: .16rem 0;
+                    border-radius: .05rem;
+                }
+            }
+
+        }
+    }
+
+    .selection-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+
+}
+
+// 小米电视
+.television-container {
+    .television-head {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .television-list {
+        display: flex;
+        padding: 0 .12rem;
+
+        a {
+            flex: 1;
+            width: 50%;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                margin-right: .14rem
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: .2rem .27rem;
+                text-align: center;
+
+                .name {
+                    font-size: .28rem;
+                    color: #212121;
+                }
+
+                .brief {
+                    margin: .06rem 0 0;
+                    font-size: .22rem;
+                    color: #CECECE;
+                }
+
+                .price {
+                    position: relative;
+                    display: inline-block;
+                    height: .42rem;
+                    line-height: .42rem;
+                    padding-left: .18rem;
+                    color: #EA625B;
+                    font-size: .28rem;
+                    overflow: hidden;
+
+                    span {
+                        display: inline-block;
+                        font-size: .2rem;
+                        margin-left: .04rem;
+                    }
+
+                    .old-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: .22rem;
+                        color: #ADADAD;
+                        text-decoration: line-through;
+                        padding-left: 15px;
+                        margin-left: 0;
+
+                        &::before {
+                            content: '￥';
+                            position: absolute;
+                            top: .02rem;
+                            left: 0;
+                            font-size: .18rem;
+                        }
+                    }
+
+                    &::before {
+                        content: '￥';
+                        position: absolute;
+                        top: .02rem;
+                        left: 0;
+                        font-size: .2rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .buybtn {
+                    width: 2rem;
+                    background-color: #EA625B;
+                    text-align: center;
+                    color: #fff;
+                    font-size: .24rem;
+                    margin: 0 auto;
+                    padding: .16rem 0;
+                    border-radius: .05rem;
+                }
+            }
+
+        }
+    }
+
+    .television-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+
+}
+
+// 小米专属
+.exclusive-container {
+    a {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 小米笔记本
+.notebook-container {
+    .notebook-head {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .notebook-list {
+        display: flex;
+        padding: 0 .12rem;
+
+        a {
+            flex: 1;
+            width: 50%;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                margin-right: .14rem
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: .2rem .27rem;
+                text-align: center;
+
+                .name {
+                    font-size: .28rem;
+                    color: #212121;
+                }
+
+                .brief {
+                    margin: .06rem 0 0;
+                    font-size: .22rem;
+                    color: #CECECE;
+                }
+
+                .price {
+                    position: relative;
+                    display: inline-block;
+                    height: .42rem;
+                    line-height: .42rem;
+                    padding-left: .18rem;
+                    color: #EA625B;
+                    font-size: .28rem;
+                    overflow: hidden;
+
+                    span {
+                        display: inline-block;
+                        font-size: .2rem;
+                        margin-left: .04rem;
+                    }
+
+                    .old-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: .22rem;
+                        color: #ADADAD;
+                        text-decoration: line-through;
+                        padding-left: 15px;
+                        margin-left: 0;
+
+                        &::before {
+                            content: '￥';
+                            position: absolute;
+                            top: .02rem;
+                            left: 0;
+                            font-size: .18rem;
+                        }
+                    }
+
+                    &::before {
+                        content: '￥';
+                        position: absolute;
+                        top: .02rem;
+                        left: 0;
+                        font-size: .2rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .buybtn {
+                    width: 2rem;
+                    background-color: #EA625B;
+                    text-align: center;
+                    color: #fff;
+                    font-size: .24rem;
+                    margin: 0 auto;
+                    padding: .16rem 0;
+                    border-radius: .05rem;
+                }
+            }
+
+        }
+    }
+
+    .notebook-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+
+}
+
+// 小米空调
+.air-conditioner-container {
+    a {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 精选家电
+.home-appliances-container {
+    .home-appliances-head {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .home-appliances-list {
+        display: flex;
+
+        a {
+            flex: 1;
+            width: 50%;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                margin-right: .04rem;
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            .info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: .2rem .27rem;
+                text-align: left;
+
+                .name {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: .28rem;
+                    color: #212121;
+                }
+
+                .brief {
+                    margin: .06rem 0 0;
+                    font-size: .22rem;
+                    color: #CECECE;
+                }
+
+                .price {
+                    position: relative;
+                    display: inline-block;
+                    height: .42rem;
+                    line-height: .42rem;
+                    padding-left: .18rem;
+                    color: #EA625B;
+                    font-size: .28rem;
+                    overflow: hidden;
+
+                    span {
+                        display: inline-block;
+                        font-size: .2rem;
+                        margin-left: .04rem;
+                    }
+
+                    .old-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: .22rem;
+                        color: #ADADAD;
+                        text-decoration: line-through;
+                        padding-left: 15px;
+                        margin-left: 0;
+
+                        &::before {
+                            content: '￥';
+                            position: absolute;
+                            top: .02rem;
+                            left: 0;
+                            font-size: .18rem;
+                        }
+                    }
+
+                    &::before {
+                        content: '￥';
+                        position: absolute;
+                        top: .02rem;
+                        left: 0;
+                        font-size: .2rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .home-appliances-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+
+}
+
+// 智能新品
+.intelligent-goods-container {
+    a {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 米家智能
+.home-intelligence-container {
+    .home-intelligence-head {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .home-intelligence-list {
+        display: flex;
+        overflow: hidden;
+
+        a {
+            flex: 1;
+            width: 50%;
+
+            .img {
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            .info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: .64rem .12rem 0 .32rem;
+                text-align: left;
+                height: 100%;
+
+                .name {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: .28rem;
+                    color: #212121;
+                }
+
+                .brief {
+                    margin: .06rem 0 0;
+                    font-size: .22rem;
+                    color: #CECECE;
+                }
+
+                .price {
+                    position: relative;
+                    display: inline-block;
+                    height: .42rem;
+                    line-height: .42rem;
+                    padding-left: .18rem;
+                    color: #EA625B;
+                    font-size: .28rem;
+                    overflow: hidden;
+                    margin-top: .15rem;
+
+                    span {
+                        display: inline-block;
+                        font-size: .2rem;
+                    }
+
+                    .old-price {
+                        position: relative;
+                        display: inline-block;
+                        font-size: .22rem;
+                        color: #ADADAD;
+                        text-decoration: line-through;
+                        padding-left: 15px;
+                        margin-left: 0;
+
+                        &::before {
+                            content: '￥';
+                            position: absolute;
+                            top: .02rem;
+                            left: 0;
+                            font-size: .18rem;
+                        }
+                    }
+
+                    &::before {
+                        content: '￥';
+                        position: absolute;
+                        top: .02rem;
+                        left: 0;
+                        font-size: .2rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .home-intelligence-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+}
+
+// 小米分类
+.classify-container {
+    .classify-list {
+        display: flex;
+
+        a {
+            flex: 1;
+            width: 50%;
+
+            &:nth-child(1) {
+                margin-right: .04rem;
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+        }
+    }
+
+    .classify-foot {
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            font-size: .28rem;
+            color: #828282;
+        }
+    }
+
+}
+
+// 小米回收
+.recycle-container {
+    a {
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 了解小米
+.comprehend-container {
+    margin-bottom: .75rem;
+
+    a {
+        display: inline-block;
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+// 底部
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FFFFFF;
+
+    div {
+        display: flex;
+
+        .footer-item {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                display: block;
+                width: .4rem;
+                height: .4rem;
+                background: url(../images/footer-item-1.png) no-repeat;
+                background-size: .4rem .4rem !important;
+                margin-bottom: .1rem;
+            }
+
+            span {
+                font-size: .22rem;
+                color: #999999;
+            }
+
+            &:first-child {
+                span {
+                    color: #FF6700;
+                }
+            }
+
+            &:nth-child(2) {
+                i {
+                    background: url(../images/footer-item-2.png) no-repeat;
+                }
+            }
+
+            &:nth-child(3) {
+                i {
+                    background: url(../images/footer-item-3.png) no-repeat;
+                }
+            }
+
+            &:nth-child(4) {
+                i {
+                    background: url(../images/footer-item-4.png) no-repeat;
+                }
+            }
+
+            &:nth-child(5) {
+                i {
+                    background: url(../images/footer-item-5.png) no-repeat;
+                }
+            }
+
+        }
+    }
+}
